@@ -1,11 +1,15 @@
-const btn1 = document.querySelector('#btn1');
+
 const btn2 = document.querySelector('#btn2');
 let text = document.querySelector('.text');
+var quotes = ["Mission accomplished", "Good job", "Its a rainy day today", "Have a nice day"];
 
-console.log(text.style.backgroundColor);
 
-btn1.addEventListener("click", function(){
+document.getElementById("btn1").addEventListener("click", function(){
     console.log('clicked');
+    var quote = quotes[ Math.floor( Math.random() * quotes.length ) ];
+    var text = document.querySelector("#text");
+    text.innerHTML = quote;
+
     if(text.style.backgroundColor === ''){
         text.style.backgroundColor = 'pink'
     }
@@ -25,4 +29,5 @@ btn1.addEventListener("click", function(){
 
 btn2.addEventListener("click", function(){
     text.style.backgroundColor = ''
+    
 });
