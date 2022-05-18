@@ -6,5 +6,5 @@ btn1.addEventListener("click", function(){
 });
 
 btn2.addEventListener("click", function(){
-    console.log('clicked');
+    console.log('clickeds');
 });
