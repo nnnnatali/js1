@@ -29,4 +29,5 @@ document.getElementById("btn1").addEventListener("click", function(){
 
 btn2.addEventListener("click", function(){
     text.style.backgroundColor = ''
+    text.innerHTML = '';
 });
